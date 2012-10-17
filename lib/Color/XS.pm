@@ -57,10 +57,6 @@ Return the blue color channel as an 8-bit value.
 It's just an example for testing, it isn't really useful for
 anything.
 
-=head1 TODO
-
-Change the dist.ini to use Inline::MakeMaker instead of ExtUtils::MakeMaker.
-
 =cut
 
 use Inline

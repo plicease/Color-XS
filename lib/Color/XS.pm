@@ -6,7 +6,9 @@ use warnings;
 our @ISA = qw( Color::XS::Color );
 
 # ABSTRACT: example color class written using Inline::CPP
+BEGIN {
 # VERSION
+}
 
 =head1 SYNOPSIS
 
@@ -62,8 +64,9 @@ Change the dist.ini to use Inline::MakeMaker instead of ExtUtils::MakeMaker.
 =cut
 
 use Inline
-  CPP  => 'DATA',
-  NAME => 'Color::XS';
+  CPP     => 'DATA',
+  NAME    => 'Color::XS',
+  defined $Color::XS::VERSION ? (VERSION => $Color::XS::VERSION ) : ();
 
 END { Inline->init; }
 

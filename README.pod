@@ -10,7 +10,7 @@ version 0.01
 
 =head1 SYNOPSIS
 
- my $color = Color::XS->new(255,255,0255); # same as Color::XS->white;
+ my $color = Color::XS->new(255,255,255); # same as Color::XS->white;
  $color->set_green(75);
  $color->set_blue(100);
  say "red is ", $color->get_red;

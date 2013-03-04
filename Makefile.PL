@@ -8,14 +8,15 @@ use File::Spec;
 my ##{ 
   my $write_makefile_args = $plugin->write_makefile_args;
   delete $write_makefile_args->{MIN_PERL_VERSION};
-   my $makefile_args_dumper = Data::Dumper->new(
-     [ $write_makefile_args ],
-     [ '*WriteMakefileArgs' ],
-   );
-   $makefile_args_dumper->Sortkeys( 1 );
-   $makefile_args_dumper->Indent( 1 );
-   $makefile_args_dumper->Useqq( 1 );
-   $makefile_args_dumper->Dump;
+  use Data::Dumper;
+  my $makefile_args_dumper = Data::Dumper->new(
+    [ $write_makefile_args ],
+    [ '*WriteMakefileArgs' ],
+  );
+  $makefile_args_dumper->Sortkeys( 1 );
+  $makefile_args_dumper->Indent( 1 );
+  $makefile_args_dumper->Useqq( 1 );
+  $makefile_args_dumper->Dump;
 ##} 
     
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {

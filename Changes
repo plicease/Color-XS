@@ -2,5 +2,8 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.02      2013-06-07 15:02:49 EST5EDT
+  - upload to dist.wdlabs.com after release
+
 0.01      2012-10-17 06:51:09 EST5EDT
-- initial version
+  - initial version

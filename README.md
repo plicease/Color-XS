@@ -14,7 +14,7 @@ example color class written using Inline::CPP
 # DESCRIPTION
 
 This module is intended as an example to allow me to experiment
-with [Inline](http://search.cpan.org/perldoc?Inline) and [Inline::CPP](http://search.cpan.org/perldoc?Inline::CPP).  It isn't intended to be useful.
+with [Inline](https://metacpan.org/pod/Inline) and [Inline::CPP](https://metacpan.org/pod/Inline::CPP).  It isn't intended to be useful.
 
 Objects of this class represent a color stored as three 8-bit color
 channel values, red, green and blue.

@@ -18,7 +18,7 @@ sub setup_installer
   # becomes
   # use Inline::MakeMaker 0.45;
 
-  if($content =~ s{use ExtUtils::MakeMaker \d+\.\d+;}{use Inline::MakeMaker 0.45;}m)
+  if($content =~ s{use ExtUtils::MakeMaker( \d+\.\d+)?;}{use Inline::MakeMaker 0.45;}m)
   {
     $makefile->content($content);
     $self->zilla->log("Modified Makefile.PL to use Inline::MakeMaker");

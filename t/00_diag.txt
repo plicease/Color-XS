@@ -1,5 +1,0 @@
-ExtUtils::MakeMaker
-Inline
-Inline::CPP
-Inline::MakeMaker
-Test::More

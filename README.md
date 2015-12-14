@@ -1,4 +1,4 @@
-# Color::XS
+# Color::XS [![Build Status](https://secure.travis-ci.org/plicease/Color-XS.png)](http://travis-ci.org/plicease/Color-XS)
 
 example color class written using Inline::CPP
 
@@ -51,7 +51,7 @@ anything.
 
 # AUTHOR
 
-Graham Ollis <plicease@cpan.org>
+Graham Ollis &lt;plicease@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
